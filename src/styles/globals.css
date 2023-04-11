@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .debug {
+    @apply border border-red-500;
+  }
+
+  .splideContainer {
+  }
+  .splideContainer .splide__list {
+    @apply justify-start;
+  }
+  .splideContainer:not(.is-overflow) .splide__list {
+    @apply justify-center;
+  }
+  .splideContainer .splide__list {
+    gap: 4rem;
+  }
+}
